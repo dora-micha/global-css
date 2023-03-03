@@ -41,15 +41,21 @@ html {
   font-size: var(--root-font-size);
   font-weight: normal;
   line-height: 1.5;
-  -webkit-text-size-adjust: 100%; /* prevents resizing of text */
+  overflow-wrap: break-word;
+  /* improve text rendering */
+  text-rendering: optimizeSpeed;
   text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
+  line-height: inherit;
   margin: 0;
 }
 
 /* --- text ---- */
+
 h1,
 h2,
 h3,
@@ -61,8 +67,8 @@ h6 {
   margin: 0;
 }
 
-p,
 blockquote,
+p,
 pre {
   margin: 0;
 }
@@ -77,31 +83,38 @@ q {
 
 address,
 cite,
-i,
+dfn,
 em,
-dfn {
+i {
   font-style: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
-code, kbd, samp, pre {
+code,
+kbd,
+pre,
+samp {
   font-family: inherit;
+  font-size: inherit;
 }
 
 /* --- lists ---- */
-ul,
-ol,
+
+dir,
 menu,
-dir {
+ol,
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-dd, dl {
+dd,
+dl {
   margin: 0;
 }
 
@@ -124,21 +137,25 @@ img {
 /* @todo: video */
 
 /* --- tables ---- */
+
 table {
   border: 0;
-  border-spacing: 0;
   border-collapse: collapse;
-  vertical-align: baseline;
+  border-spacing: 0;
   text-align: left;
+  vertical-align: baseline;
 }
 
-thead, tbody, tfoot, tr {
+tbody
+tfoot,
+thead,
+tr {
   vertical-align: inherit;
 }
 
 th {
-  padding: 0;
   font-weight: inherit;
+  padding: 0;
 }
 
 td {
@@ -150,6 +167,7 @@ caption {
 }
 
 /* --- forms ---- */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -166,8 +184,11 @@ label {
   display: block;
 }
 
-input, textarea, select, button {
-  appearance: none;
+button,
+input,
+select,
+textarea {
+  appearance: auto;
   background-color: initial;
   border: none;
   border-radius: 0;
@@ -226,9 +247,9 @@ a {
 /* ---  buttons ---- */
 
 button,
-input[type="submit"],
 input[type="button"],
-input[type="reset"]  {
+input[type="reset"],
+input[type="submit"] {
   appearance: none;
   cursor: pointer;
   user-select: text;
@@ -236,6 +257,7 @@ input[type="reset"]  {
 
 
 /* --- other ---- */
+
 hr {
   border-style: solid;
   margin: 0;
