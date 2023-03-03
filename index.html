@@ -21,12 +21,34 @@
     <h5>h5</h5>
     <h6>h6</h6>
     <p>p</p>
+    <p><s>s</s> <del>del</del></p>
+    <p><u>u</u> <ins>ins</ins></p>
     <p><q>q</q></p>
-    <a href="index.html">a</a>
+    <p><i>i</i> <em>em</em> <dfn>dfn</dfn></p>
+    <p><strong>strong</strong> <b>b</b></p>
+    <p><small>small</small></p>
+    <p><mark>mark</mark></p>
+    <dl>
+      <dt>dt</dt>
+      <dd>dd</dd>
+    </dl>
+    <p><samp>samp</samp> <kbd>kbd</kbd></p>
+    <p>a<sub>sub</sub>  a<sup>sup</sup></p>
+    <p><code>code</code></p>
+    <pre>pre</pre>
     <figure>
       <blockquote cite="index.html">blockquote</blockquote>
       <figcaption>figcaption, <cite>cite</cite></figcaption>
     </figure>
+    <figure>
+      <img src="https://picsum.photos/80" alt="alt">
+      <figcaption>figcaption</figcaption>
+    </figure>
+    <img src="https://picsum.photos/80" alt="alt">
+    <picture>
+      <source srcset="https://picsum.photos/80" media="(min-width: 800px)">
+      <img src="https://picsum.photos/80" alt="alt">
+    </picture>
     <address>address</address>
     <ul>
       <li>ul > li</li>
@@ -49,21 +71,85 @@
     <menu>
       <li>menu > li</li>
     </menu>
+    <table>
+      <caption>caption</caption>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>th</th>
+          <th>th</th>
+          <th>th</th>
+          <th>th</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            body td 
+            <img src="https://picsum.photos/40" alt="alt">
+          </td>
+          <td>body td</td>
+          <td>body td</td>
+          <td>body td</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>foot td</td>
+          <td>foot td</td>
+        </tr>
+    </tfoot>
+    </table>
+
+    <br>
+    <a href="index.html">a</a>
+    <br>
+    <br>
+    <button type="button">button</button>
+    <br>
+    <input type="submit" value="input-submit">
+    <br>
+    <input type="button" value="input-button">
+    <br>
+    <input type="reset" value="input-reset">
     <hr>
     <form>
-      <fieldset>
-        <legend>legend</legend>
-        <label>text</label>
-        <input type="text">
-      </fieldset>
+      <label>text</label>
+      <input type="text">
+      <br>
       <label>email</label>
       <input type="email">
-      <label>search</label>
-      <input type="search">
-      <input type="submit" value="input-submit">
-      <input type="button" value="input-button">
-      <input type="reset" value="input-reset">
+      <br>
+      <input type="search" value="search">
+      <br>
+      <textarea>textarea</textarea>
+      <br>
+      <select>
+        <option value="">select</option>
+        <option value="a">option a</option>
+        <option value="b">option b</option>
+      </select>
+      <fieldset>
+        <legend>legend</legend>
+        <input type="checkbox" id="checkbox1" name="checkbox1" checked>
+        <label for="checkbox1">checkbox1</label>
+        <br>
+        <input type="checkbox" id="checkbox2" name="checkbox2">
+        <label for="checkbox2">checkbox2</label>
+      </fieldset>
+      <br>
+      <input type="color" id="color" name="color" value="#e66465">
+      <label for="color">color</label>
+      <br>
+      <label for="date">date</label>
+      <input type="date" id="date" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+      <br>
+      <label for="date">datetime-local</label>
+      <input type="datetime-local" id="datetime-local" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
     </form>
-    <button>button</button>
   </body>
 </html>
