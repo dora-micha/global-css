@@ -33,11 +33,7 @@
 }
 
 html {
-  /* 
-    color: {value};
-    font-family: 'sans-serif';
-    font-size: {value};
-  */
+  font-family: sans-serif;
   font-size: var(--root-font-size);
   font-weight: normal;
   line-height: 1.5;
@@ -133,8 +129,6 @@ picture {
 img {
   display: block;
 }
-
-/* @todo: video */
 
 /* --- tables ---- */
 
@@ -232,7 +226,9 @@ input:focus::placeholder {
   }
 }
 
-::selection, mark { /* highlight elements */
+ /* highlighted elements */
+::selection,
+mark {
   background: var(--color-for-highlighting);
   color: initial;
 }
@@ -255,6 +251,12 @@ input[type="submit"] {
   user-select: text;
 }
 
+button:disabled,
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled {
+  pointer-events: none;
+}
 
 /* --- other ---- */
 
