@@ -1,5 +1,6 @@
 # Global CSS
 
+![logo](https://dora.michalostamou.me/logo.svg)
 A set of styles that reset and normalize the default web browser styling in order to create consistent user interfaces.
 
 [Demo](https://global-css.vercel.app)
