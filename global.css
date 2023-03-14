@@ -22,7 +22,7 @@
 /* --- root ---- */
 
 :root {
-  --color-for-highlighting: #f000ff;
+  --color-for-highlighting: #FFF97A;
   --root-font-size: 16px;
 }
 
@@ -100,7 +100,6 @@ pre {
   font-family: inherit;
   font-size: inherit;
   margin: 0;
-  white-space: pre-wrap;
 }
 
 /* --- lists ---- */
