@@ -240,7 +240,7 @@ mark {
 /* --- link & buttons ---- */
 
 a {
-  color: inherit;
+  color: initial;
   text-decoration: none;
 }
 
