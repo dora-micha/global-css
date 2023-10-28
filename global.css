@@ -23,6 +23,7 @@
 :root {
   --color-bg-highlight: #FFF97A;
   --font-size: 16px;
+  --spacing: 4px;
 }
 
 *,
@@ -42,7 +43,7 @@ html {
   text-rendering: optimizeSpeed;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; /* Doesn't play well with google fonts */
 }
 
 body {
@@ -215,6 +216,31 @@ input:placeholder-shown {
 
 input:focus::placeholder {
   opacity: 0; /* hides placeholder when user types */
+}
+
+input[type="range"] {
+  appearance: none;
+  background-color: #000;
+  cursor: pointer;
+  height: var(--spacing);
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #000; 
+  height: calc(var(--spacing) * 6);
+  width: calc(var(--spacing) * 2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #000; 
+  border-radius: 0;  
+  height: calc(var(--spacing) * 6);
+  width: calc(var(--spacing) * 2);
 }
 
 /* --- states ---- */
