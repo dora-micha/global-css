@@ -16,10 +16,10 @@ This is the starting point for you to apply your own custom styles on top of it.
 Read the arctile here [Global CSS](https://dora.michalostamou.me/articles/global-css).
 
 
-## Roadmap
+## Changelog
 
- - media html elements (March 2023)
- - normalise input type elements (April 2023)
+ - normalise input type range (Oct 2023)
+   
 
 ## License
 
